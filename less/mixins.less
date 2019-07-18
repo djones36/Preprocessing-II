@@ -1,1 +1,24 @@
 // Mixins in here
+.bottom-border(){
+    border-bottom: 2px dashed @navigation-border;
+}
+
+.button-master(@radius, @thickness, @pad){
+    background-color: @button-bg;
+    color: @white;
+    text-align: center;
+    font-weight:bold;
+    font-size: @buttonfont;
+    border-radius: @radius;
+    cursor: pointer;
+    border:@thickness solid black;
+    padding: @pad;
+}
+
+.hover(@time) {
+    &:hover {
+      transform: scale(1.30);
+      background-color: darken(@button-bg, 10%);
+      transition: @time;
+    }
+  }//stretch animation
