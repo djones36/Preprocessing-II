@@ -182,7 +182,6 @@ header .navbar {
     width: 100%;
     flex-direction: column;
     align-items: center;
-    border: 1px red solid;
   }
 }
 header .navbar h1 {
@@ -230,6 +229,11 @@ header .navbar nav a:hover {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+@media (max-width: 500px) {
+  .home {
+    width: 90%;
+  }
 }
 .home .cta {
   padding-bottom: 1.5rem;
