@@ -191,7 +191,7 @@ header .navbar h1 {
   header .navbar h1 {
     justify-content: center;
     display: flex;
-    margin-bottom: 1.5rem;
+    margin: 1.5rem;
   }
 }
 header .navbar nav {
@@ -248,13 +248,33 @@ header .navbar nav a:hover {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+    padding-right: 0%;
+    order: 1;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+    padding-left: 0%;
+    border: 1px red solid;
+    order: 2;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -275,6 +295,12 @@ header .navbar nav a:hover {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+    align-content: center;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
 }
@@ -284,9 +310,20 @@ header .navbar nav a:hover {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 80%;
+  }
 }
 .home .content-pick .destination .btn {
   background-color: #17A2B8;
@@ -296,7 +333,7 @@ header .navbar nav a:hover {
   font-size: 2rem;
   border-radius: 1.5rem;
   cursor: pointer;
-  border: 0.25rem solid black;
+  border: 0.05rem solid black;
   padding: 1.5rem;
 }
 .home .content-pick .destination .btn:hover {
