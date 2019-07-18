@@ -5,10 +5,20 @@ header{
     .navbar{
         margin: 0 auto;
         width:800px;
-        
         display:flex;
+        @media @mobile{
+            width:100%;
+            flex-direction:column;
+            align-items: center;
+            border:1px red solid;
+        }//end of mobile
         h1{
             width:50%;
+            @media @mobile {
+                justify-content:  center;
+                display:flex;
+                margin-bottom: 1.5rem;
+            }//end of mobile
             }
         nav{
             width:50%;
@@ -16,14 +26,21 @@ header{
             display:flex;
             justify-content: space-around;
             align-items: center;
+            @media @mobile{
+                width:100%;
+            }//end of mobile
             a{
                color:@font-color;
                font-size: @stdfont;
                text-decoration: none;
                &:hover{
                    color:@silver;
-               }//end of a
-            } //end of nav   
-        }//end of h1
+               }
+               @media @mobile{
+                   font-size: 1.85rem;
+               }//end of mobile
+            } //end of a  
+        }//end of nav
     }//end of nav bar
+
 }//end of header
