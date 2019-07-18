@@ -1,1 +1,31 @@
 // Navigation Styles here
+header{
+    border-bottom: 2px dashed @navigation-border;
+    width:100%;
+    .navbar{
+        margin: 0 auto;
+        width:800px;
+        
+        display:flex;
+        h1{
+            width:50%;
+            }
+        nav{
+            border: 1px solid red;
+            width:50%;
+            margin: 0 auto;
+            justify-content: flex-end;
+            display:flex;
+            a{
+               align-items: baseline;
+               color:@font-color;
+               font-size: @stdfont;
+               text-decoration: none;
+               &:hover{
+                   color:@silver;
+               }
+            }    
+        }
+    }
+    
+}

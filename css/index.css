@@ -168,6 +168,34 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+header {
+  border-bottom: 2px dashed #C0C0C0;
+  width: 100%;
+}
+header .navbar {
+  margin: 0 auto;
+  width: 800px;
+  display: flex;
+}
+header .navbar h1 {
+  width: 50%;
+}
+header .navbar nav {
+  border: 1px solid red;
+  width: 50%;
+  margin: 0 auto;
+  justify-content: flex-end;
+  display: flex;
+}
+header .navbar nav a {
+  align-items: baseline;
+  color: #212529;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+header .navbar nav a:hover {
+  color: #C0C0C0;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
