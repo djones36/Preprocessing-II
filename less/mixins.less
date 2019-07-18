@@ -2,3 +2,19 @@
 .bottom-border(){
     border-bottom: 2px dashed @navigation-border;
 }
+
+.button-master(@radius, @thickness, @pad){
+    background-color: @button-bg;
+    color: @white;
+    text-align: center;
+    font-weight:bold;
+    font-size: @buttonfont;
+    border-radius: @radius;
+    cursor: pointer;
+    border:@thickness solid black;
+    padding: @pad;
+
+    &:hover{
+        background-color: darken(@button-bg, 10%);
+    }
+}
